@@ -1,0 +1,28 @@
+diff -urN tano-1.2.1/src/core/CMakeLists.txt tano-1.2.1-patched/src/core/CMakeLists.txt
+--- tano-1.2.1/src/core/CMakeLists.txt	2013-02-08 19:59:08.000000000 +1100
++++ tano-1.2.1-patched/src/core/CMakeLists.txt	2013-07-14 00:33:31.427898302 +1100
+@@ -193,8 +193,8 @@
+ ENDIF(MSVC)
+ 
+ IF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+-    SET_TARGET_PROPERTIES(${TANO_CORE} PROPERTIES VERSION ${TANO_VERSION_MAJOR}
+-                                       SOVERSION "${TANO_VERSION_MAJOR}.${TANO_VERSION_MINOR}"
++    SET_TARGET_PROPERTIES(${TANO_CORE} PROPERTIES VERSION ${TANO_VERSION_MAJOR}.${TANO_VERSION_MINOR}
++                                       SOVERSION "${TANO_VERSION_MAJOR}"
+     )
+ ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+ 
+diff -urN tano-1.2.1/src/widgets/CMakeLists.txt tano-1.2.1-patched/src/widgets/CMakeLists.txt
+--- tano-1.2.1/src/widgets/CMakeLists.txt	2013-02-08 19:59:08.000000000 +1100
++++ tano-1.2.1-patched/src/widgets/CMakeLists.txt	2013-07-14 00:33:43.326092431 +1100
+@@ -199,8 +199,8 @@
+ ENDIF(MSVC)
+ 
+ IF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+-    SET_TARGET_PROPERTIES(${TANO_WIDGETS} PROPERTIES VERSION ${TANO_VERSION_MAJOR}
+-                                          SOVERSION "${TANO_VERSION_MAJOR}.${TANO_VERSION_MINOR}"
++    SET_TARGET_PROPERTIES(${TANO_WIDGETS} PROPERTIES VERSION ${TANO_VERSION_MAJOR}.${TANO_VERSION_MINOR}
++                                          SOVERSION "${TANO_VERSION_MAJOR}"
+     )
+ ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+ 
