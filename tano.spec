@@ -1,7 +1,7 @@
 Summary:	An open-source cross-platform IP TV player
 Name:		tano
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Video
 Url:		http://projects.tano.si/
@@ -15,6 +15,8 @@ BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig(libvlc-qt)
 BuildRequires:	pkgconfig(libvlc-qt-qml)
 BuildRequires:	pkgconfig(libvlc-qt-widgets)
+# In fact, it needs only plugins but they are packaged into main vlc package
+Requires:	vlc
 
 %description
 Tano is an open-source cross-platform IP TV player. It features full IP TV
