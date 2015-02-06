@@ -1,7 +1,7 @@
 Summary:	An open-source cross-platform IP TV player
 Name:		tano
 Version:	1.2.1
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Video
 Url:		http://projects.tano.si/
